@@ -3354,3 +3354,396 @@ from raw.jaffle_shop.raw_orders
 [0m22:18:34.539210 [debug] [MainThread]: Command `dbt run` succeeded at 22:18:34.538959 after 3.29 seconds
 [0m22:18:34.539892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109485e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109496090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092869d0>]}
 [0m22:18:34.540554 [debug] [MainThread]: Flushing usage events
+[0m22:20:03.915815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a162550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a788950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a364950>]}
+
+
+============================== 22:20:03.922147 | 713cc71d-8080-4c68-8ef3-c65ae651c4c2 ==============================
+[0m22:20:03.922147 [info ] [MainThread]: Running with dbt=1.7.8
+[0m22:20:03.923144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ben/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ben/jaffle_shop/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:20:04.500273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '713cc71d-8080-4c68-8ef3-c65ae651c4c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0c5110>]}
+[0m22:20:04.638919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '713cc71d-8080-4c68-8ef3-c65ae651c4c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab58750>]}
+[0m22:20:04.640131 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m22:20:04.668565 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m22:20:04.723504 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:20:04.724722 [debug] [MainThread]: Partial parsing: added file: jaffle_shop://models/schema.yml
+[0m22:20:05.034268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '713cc71d-8080-4c68-8ef3-c65ae651c4c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b439b50>]}
+[0m22:20:05.052258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '713cc71d-8080-4c68-8ef3-c65ae651c4c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3c8050>]}
+[0m22:20:05.053085 [info ] [MainThread]: Found 3 models, 3 seeds, 9 tests, 0 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m22:20:05.053712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '713cc71d-8080-4c68-8ef3-c65ae651c4c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b121f90>]}
+[0m22:20:05.057332 [info ] [MainThread]: 
+[0m22:20:05.058800 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:20:05.061092 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW_JAFFLE_SHOP'
+[0m22:20:05.088829 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m22:20:05.089541 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m22:20:05.090253 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:20:06.005739 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m22:20:06.011278 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m22:20:06.157966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '713cc71d-8080-4c68-8ef3-c65ae651c4c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b462f90>]}
+[0m22:20:06.159319 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:20:06.159971 [info ] [MainThread]: 
+[0m22:20:06.166181 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:20:06.167504 [debug] [Thread-2 (]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:20:06.168674 [debug] [Thread-3 (]: Began running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:20:06.170761 [debug] [Thread-4 (]: Began running node test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5
+[0m22:20:06.170009 [info ] [Thread-1 (]: 1 of 9 START test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+[0m22:20:06.172034 [info ] [Thread-2 (]: 2 of 9 START test not_null_customers_customer_id ............................... [RUN]
+[0m22:20:06.173002 [info ] [Thread-3 (]: 3 of 9 START test not_null_stg_customers_customer_id ........................... [RUN]
+[0m22:20:06.174601 [info ] [Thread-4 (]: 4 of 9 START test not_null_stg_orders_customer_id .............................. [RUN]
+[0m22:20:06.176554 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad)
+[0m22:20:06.177924 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d'
+[0m22:20:06.179114 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m22:20:06.180545 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5'
+[0m22:20:06.181429 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:20:06.182173 [debug] [Thread-2 (]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:20:06.182965 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:20:06.183779 [debug] [Thread-4 (]: Began compiling node test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5
+[0m22:20:06.199230 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m22:20:06.214861 [debug] [Thread-2 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m22:20:06.222211 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:20:06.229044 [debug] [Thread-4 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m22:20:06.230914 [debug] [Thread-2 (]: Timing info for test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d (compile): 22:20:06.199672 => 22:20:06.230482
+[0m22:20:06.231717 [debug] [Thread-1 (]: Timing info for test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad (compile): 22:20:06.184256 => 22:20:06.231306
+[0m22:20:06.232818 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa (compile): 22:20:06.215393 => 22:20:06.232314
+[0m22:20:06.233696 [debug] [Thread-2 (]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:20:06.234645 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:20:06.235514 [debug] [Thread-4 (]: Timing info for test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5 (compile): 22:20:06.222744 => 22:20:06.235114
+[0m22:20:06.236064 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:20:06.278033 [debug] [Thread-4 (]: Began executing node test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5
+[0m22:20:06.295495 [debug] [Thread-2 (]: Writing runtime sql for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m22:20:06.294470 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m22:20:06.300469 [debug] [Thread-3 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:20:06.305130 [debug] [Thread-4 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m22:20:06.307485 [debug] [Thread-1 (]: Using snowflake connection "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m22:20:06.308825 [debug] [Thread-2 (]: Using snowflake connection "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m22:20:06.310126 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from RAW.JAFFLE_SHOP.stg_orders
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'placed','shipped','completed','return_pending','returned'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:06.310943 [debug] [Thread-2 (]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from RAW.JAFFLE_SHOP.customers
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:06.312085 [debug] [Thread-3 (]: Using snowflake connection "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:20:06.313060 [debug] [Thread-4 (]: Using snowflake connection "test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m22:20:06.313651 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:20:06.314306 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:20:06.314996 [debug] [Thread-3 (]: On test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from RAW.JAFFLE_SHOP.stg_customers
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:06.315750 [debug] [Thread-4 (]: On test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from RAW.JAFFLE_SHOP.stg_orders
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:06.321036 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:20:06.321816 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:20:06.802210 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m22:20:06.818105 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa (execute): 22:20:06.296161 => 22:20:06.817507
+[0m22:20:06.819096 [debug] [Thread-3 (]: On test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa: Close
+[0m22:20:06.954980 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:06.960850 [debug] [Thread-2 (]: Timing info for test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d (execute): 22:20:06.236467 => 22:20:06.960214
+[0m22:20:06.963114 [info ] [Thread-3 (]: 3 of 9 PASS not_null_stg_customers_customer_id ................................. [[32mPASS[0m in 0.78s]
+[0m22:20:06.964291 [debug] [Thread-2 (]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: Close
+[0m22:20:06.965777 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:20:06.968704 [debug] [Thread-3 (]: Began running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:20:06.970506 [info ] [Thread-3 (]: 5 of 9 START test not_null_stg_orders_order_id ................................. [RUN]
+[0m22:20:06.972342 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64)
+[0m22:20:06.973702 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:20:06.985053 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:20:06.987147 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64 (compile): 22:20:06.974818 => 22:20:06.986644
+[0m22:20:06.987859 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:20:06.994986 [debug] [Thread-3 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:20:06.997156 [debug] [Thread-3 (]: Using snowflake connection "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:20:06.998304 [debug] [Thread-3 (]: On test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from RAW.JAFFLE_SHOP.stg_orders
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:06.999506 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:20:07.104827 [info ] [Thread-2 (]: 2 of 9 PASS not_null_customers_customer_id ..................................... [[32mPASS[0m in 0.93s]
+[0m22:20:07.106540 [debug] [Thread-2 (]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:20:07.107702 [debug] [Thread-2 (]: Began running node test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:20:07.108835 [info ] [Thread-2 (]: 6 of 9 START test relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [RUN]
+[0m22:20:07.111051 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d, now test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500)
+[0m22:20:07.112331 [debug] [Thread-2 (]: Began compiling node test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:20:07.128512 [debug] [Thread-2 (]: Writing injected SQL for node "test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m22:20:07.130482 [debug] [Thread-2 (]: Timing info for test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500 (compile): 22:20:07.113210 => 22:20:07.129814
+[0m22:20:07.131745 [debug] [Thread-2 (]: Began executing node test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:20:07.140963 [debug] [Thread-2 (]: Writing runtime sql for node "test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m22:20:07.144415 [debug] [Thread-2 (]: Using snowflake connection "test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m22:20:07.145933 [debug] [Thread-2 (]: On test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from RAW.JAFFLE_SHOP.stg_orders
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from RAW.JAFFLE_SHOP.stg_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:07.147142 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:20:07.291273 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:07.296796 [debug] [Thread-4 (]: Timing info for test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5 (execute): 22:20:06.301053 => 22:20:07.296130
+[0m22:20:07.297888 [debug] [Thread-4 (]: On test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5: Close
+[0m22:20:07.437019 [info ] [Thread-4 (]: 4 of 9 PASS not_null_stg_orders_customer_id .................................... [[32mPASS[0m in 1.26s]
+[0m22:20:07.438682 [debug] [Thread-4 (]: Finished running node test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5
+[0m22:20:07.439761 [debug] [Thread-4 (]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:20:07.440653 [info ] [Thread-4 (]: 7 of 9 START test unique_customers_customer_id ................................. [RUN]
+[0m22:20:07.442204 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_orders_customer_id.af79d5e4b5, now test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1)
+[0m22:20:07.443041 [debug] [Thread-4 (]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:20:07.457109 [debug] [Thread-4 (]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m22:20:07.458500 [debug] [Thread-4 (]: Timing info for test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1 (compile): 22:20:07.443542 => 22:20:07.458077
+[0m22:20:07.459138 [debug] [Thread-4 (]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:20:07.464006 [debug] [Thread-4 (]: Writing runtime sql for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m22:20:07.469514 [debug] [Thread-4 (]: Using snowflake connection "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m22:20:07.471096 [debug] [Thread-4 (]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from RAW.JAFFLE_SHOP.customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:07.471876 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m22:20:07.534368 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:07.537523 [debug] [Thread-1 (]: Timing info for test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad (execute): 22:20:06.242397 => 22:20:07.537124
+[0m22:20:07.538797 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad: Close
+[0m22:20:07.539992 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:07.544121 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64 (execute): 22:20:06.988270 => 22:20:07.543738
+[0m22:20:07.545018 [debug] [Thread-3 (]: On test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64: Close
+[0m22:20:07.676368 [info ] [Thread-1 (]: 1 of 9 PASS accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [[32mPASS[0m in 1.50s]
+[0m22:20:07.677753 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:20:07.678567 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:20:07.679742 [info ] [Thread-1 (]: 8 of 9 START test unique_stg_customers_customer_id ............................. [RUN]
+[0m22:20:07.681120 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad, now test.jaffle_shop.unique_stg_customers_customer_id.c7614daada)
+[0m22:20:07.681837 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:20:07.689601 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m22:20:07.692506 [debug] [Thread-1 (]: Timing info for test.jaffle_shop.unique_stg_customers_customer_id.c7614daada (compile): 22:20:07.682401 => 22:20:07.692033
+[0m22:20:07.693181 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:20:07.697698 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m22:20:07.699252 [info ] [Thread-3 (]: 5 of 9 PASS not_null_stg_orders_order_id ....................................... [[32mPASS[0m in 0.73s]
+[0m22:20:07.700665 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:20:07.702339 [debug] [Thread-1 (]: Using snowflake connection "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m22:20:07.703514 [debug] [Thread-3 (]: Began running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:20:07.704666 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from RAW.JAFFLE_SHOP.stg_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:07.705674 [info ] [Thread-3 (]: 9 of 9 START test unique_stg_orders_order_id ................................... [RUN]
+[0m22:20:07.706382 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:20:07.707409 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64, now test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a)
+[0m22:20:07.709375 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:20:07.716052 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m22:20:07.718434 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a (compile): 22:20:07.709919 => 22:20:07.717935
+[0m22:20:07.719226 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:20:07.724542 [debug] [Thread-3 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m22:20:07.727549 [debug] [Thread-3 (]: Using snowflake connection "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m22:20:07.728576 [debug] [Thread-3 (]: On test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from RAW.JAFFLE_SHOP.stg_orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m22:20:07.729454 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:20:08.246709 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:08.252877 [debug] [Thread-2 (]: Timing info for test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500 (execute): 22:20:07.132633 => 22:20:08.252060
+[0m22:20:08.253928 [debug] [Thread-2 (]: On test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500: Close
+[0m22:20:08.341147 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:08.343386 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:08.348327 [debug] [Thread-1 (]: Timing info for test.jaffle_shop.unique_stg_customers_customer_id.c7614daada (execute): 22:20:07.693559 => 22:20:08.347741
+[0m22:20:08.352901 [debug] [Thread-4 (]: Timing info for test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1 (execute): 22:20:07.459509 => 22:20:08.352202
+[0m22:20:08.353929 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_customers_customer_id.c7614daada: Close
+[0m22:20:08.354747 [debug] [Thread-4 (]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: Close
+[0m22:20:08.360023 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m22:20:08.364808 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a (execute): 22:20:07.719915 => 22:20:08.364317
+[0m22:20:08.366144 [debug] [Thread-3 (]: On test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a: Close
+[0m22:20:08.374020 [info ] [Thread-2 (]: 6 of 9 PASS relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [[32mPASS[0m in 1.26s]
+[0m22:20:08.375084 [debug] [Thread-2 (]: Finished running node test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:20:08.501250 [info ] [Thread-1 (]: 8 of 9 PASS unique_stg_customers_customer_id ................................... [[32mPASS[0m in 0.82s]
+[0m22:20:08.503437 [info ] [Thread-4 (]: 7 of 9 PASS unique_customers_customer_id ....................................... [[32mPASS[0m in 1.06s]
+[0m22:20:08.505105 [info ] [Thread-3 (]: 9 of 9 PASS unique_stg_orders_order_id ......................................... [[32mPASS[0m in 0.80s]
+[0m22:20:08.506597 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:20:08.507655 [debug] [Thread-4 (]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:20:08.508659 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:20:08.512480 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:20:08.513161 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m22:20:08.513809 [debug] [MainThread]: Connection 'test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500' was properly closed.
+[0m22:20:08.514720 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a' was properly closed.
+[0m22:20:08.516369 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+[0m22:20:08.517116 [info ] [MainThread]: 
+[0m22:20:08.518052 [info ] [MainThread]: Finished running 9 tests in 0 hours 0 minutes and 3.46 seconds (3.46s).
+[0m22:20:08.521085 [debug] [MainThread]: Command end result
+[0m22:20:08.534929 [info ] [MainThread]: 
+[0m22:20:08.535732 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:20:08.536340 [info ] [MainThread]: 
+[0m22:20:08.536929 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
+[0m22:20:08.539065 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 4.7072005, "process_user_time": 5.164863, "process_kernel_time": 0.518576, "process_mem_max_rss": "141516800", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:20:08.540429 [debug] [MainThread]: Command `dbt test` succeeded at 22:20:08.540085 after 4.71 seconds
+[0m22:20:08.541818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109bf8950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7a1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10648bd10>]}
+[0m22:20:08.542745 [debug] [MainThread]: Flushing usage events
