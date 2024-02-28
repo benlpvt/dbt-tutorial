@@ -2,14 +2,17 @@
   create or replace   view RAW.JAFFLE_SHOP.customers
   
    as (
-    with customers as (
+    
+
+
+with customers as (
 
     select
         id as customer_id,
         first_name,
         last_name
 
-    from raw.jaffle_shop.customers
+    from raw.jaffle_shop.raw_customers
 
 ),
 
@@ -21,7 +24,7 @@ orders as (
         order_date,
         status
 
-    from raw.jaffle_shop.orders
+    from raw.jaffle_shop.raw_orders
 
 ),
 
