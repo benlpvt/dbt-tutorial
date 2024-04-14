@@ -2,7 +2,9 @@
   create or replace   view RAW.JAFFLE_SHOP.stg_customers
   
    as (
-    
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
 
 select
     id as customer_id,
