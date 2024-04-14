@@ -7339,3 +7339,2052 @@ SELECT * FROM pivoted
 [0m22:42:16.914945 [debug] [MainThread]: Command `dbt run` succeeded at 22:42:16.914735 after 4.76 seconds
 [0m22:42:16.915601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109963650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fdac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c8bd90>]}
 [0m22:42:16.916200 [debug] [MainThread]: Flushing usage events
+[0m13:18:38.289584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf45750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf45310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf163d0>]}
+
+
+============================== 13:18:38.299531 | ab39f00b-ce3f-460c-954a-59ec1b1c0fd8 ==============================
+[0m13:18:38.299531 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:18:38.301116 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/ben/jaffle_shop/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/ben/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:39.044422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ab39f00b-ce3f-460c-954a-59ec1b1c0fd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca1e150>]}
+[0m13:18:39.169221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ab39f00b-ce3f-460c-954a-59ec1b1c0fd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca45710>]}
+[0m13:18:39.171082 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:18:39.194853 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:18:39.300090 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m13:18:39.301319 [debug] [MainThread]: Partial parsing: added file: jaffle_shop://macros/cents_to_dollars.sql
+[0m13:18:39.302203 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/staging/stg_payments.sql
+[0m13:18:39.478723 [error] [MainThread]: Encountered an error:
+Compilation Error in model stg_payments (models/staging/stg_payments.sql)
+  unexpected '%'
+    line 11
+      {{% cents_to_dollars(amount, 2) %}} AS amount
+[0m13:18:39.481348 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.2742366, "process_user_time": 3.785739, "process_kernel_time": 0.550046, "process_mem_max_rss": "124698624", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:18:39.482562 [debug] [MainThread]: Command `dbt run` failed at 13:18:39.482324 after 1.28 seconds
+[0m13:18:39.483275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc59ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c282c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf2ff90>]}
+[0m13:18:39.484020 [debug] [MainThread]: Flushing usage events
+[0m13:19:12.042589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b550890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bded350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd43f90>]}
+
+
+============================== 13:19:12.048619 | 1198959b-cad6-4402-a9a5-996fdf39c6bc ==============================
+[0m13:19:12.048619 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:19:12.049891 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/ben/jaffle_shop/logs', 'profiles_dir': '/Users/ben/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:19:12.571681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1198959b-cad6-4402-a9a5-996fdf39c6bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bded910>]}
+[0m13:19:12.699142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1198959b-cad6-4402-a9a5-996fdf39c6bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0f7790>]}
+[0m13:19:12.700390 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:19:12.722841 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:19:12.774353 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m13:19:12.775363 [debug] [MainThread]: Partial parsing: added file: jaffle_shop://macros/cents_to_dollars.sql
+[0m13:19:12.776111 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/staging/stg_payments.sql
+[0m13:19:12.947019 [error] [MainThread]: Encountered an error:
+Compilation Error in model stg_payments (models/staging/stg_payments.sql)
+  Encountered unknown tag 'cents_to_dollars'.
+    line 11
+      {% cents_to_dollars(amount, 2) %} AS amount
+[0m13:19:12.948971 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.98693496, "process_user_time": 3.598834, "process_kernel_time": 0.311528, "process_mem_max_rss": "125575168", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:19:12.949888 [debug] [MainThread]: Command `dbt run` failed at 13:19:12.949672 after 0.99 seconds
+[0m13:19:12.950564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bded190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0b9310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bab5e10>]}
+[0m13:19:12.951234 [debug] [MainThread]: Flushing usage events
+[0m13:20:39.214203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b51490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f16510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b5f890>]}
+
+
+============================== 13:20:39.221137 | f579c266-1956-4119-88cf-dc043af86022 ==============================
+[0m13:20:39.221137 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:20:39.222291 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/ben/jaffle_shop/logs', 'version_check': 'True', 'profiles_dir': '/Users/ben/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:20:39.751471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f9a4950>]}
+[0m13:20:39.876870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111aa8250>]}
+[0m13:20:39.878246 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:20:39.901795 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:20:39.955369 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m13:20:39.956397 [debug] [MainThread]: Partial parsing: added file: jaffle_shop://macros/cents_to_dollars.sql
+[0m13:20:39.957150 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/staging/stg_payments.sql
+[0m13:20:40.369637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111ea7b10>]}
+[0m13:20:40.390242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f26fd0>]}
+[0m13:20:40.391112 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:20:40.391730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111d71310>]}
+[0m13:20:40.395271 [info ] [MainThread]: 
+[0m13:20:40.396662 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:20:40.398435 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:20:40.417814 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:20:40.418515 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:20:40.419058 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:20:41.252190 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:20:41.257141 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:20:41.420239 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:20:41.437480 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:20:41.438255 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:20:41.438831 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:20:42.021645 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m13:20:42.026054 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:20:42.177093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f53d50>]}
+[0m13:20:42.179037 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:20:42.179954 [info ] [MainThread]: 
+[0m13:20:42.186196 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:20:42.187171 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:20:42.188089 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:20:42.188978 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:20:42.189928 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:20:42.190778 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:20:42.192158 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:20:42.193370 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:20:42.194498 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:20:42.195094 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:20:42.195641 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:20:42.196172 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:20:42.207499 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:20:42.213394 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:20:42.218428 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:20:42.220031 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:20:42.196538 => 13:20:42.219581
+[0m13:20:42.221062 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:20:42.208042 => 13:20:42.220618
+[0m13:20:42.221791 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:20:42.214135 => 13:20:42.221467
+[0m13:20:42.222323 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:20:42.223049 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:20:42.224125 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:20:42.279920 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:20:42.282580 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:20:42.286811 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:20:42.288680 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:20:42.289328 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:20:42.290337 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:20:42.290836 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:42.291714 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:20:42.292287 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:20:42.294349 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    
+round(1.0 *  / 100, 2) AS amount
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:20:42.295188 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:20:42.295880 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:20:42.867275 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01b3aaf0-0001-c86b-0005-81260003f1ba
+[0m13:20:42.868387 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 11 at position 13 unexpected '/'.
+[0m13:20:42.869546 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:20:42.282973 => 13:20:42.869106
+[0m13:20:42.870333 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:20:42.891351 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:20:42.915792 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:20:42.940740 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:20:42.224599 => 13:20:42.940374
+[0m13:20:42.942325 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:20:42.257905 => 13:20:42.942001
+[0m13:20:42.942987 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:20:42.944921 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:20:43.024498 [debug] [Thread-3 (]: Database Error in model stg_payments (models/staging/stg_payments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 11 at position 13 unexpected '/'.
+  compiled Code at target/run/jaffle_shop/models/staging/stg_payments.sql
+[0m13:20:43.025643 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11227add0>]}
+[0m13:20:43.026814 [error] [Thread-3 (]: 3 of 5 ERROR creating sql view model JAFFLE_SHOP.stg_payments .................. [[31mERROR[0m in 0.83s]
+[0m13:20:43.027908 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:20:43.090101 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112183650>]}
+[0m13:20:43.091902 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1120c9490>]}
+[0m13:20:43.092994 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 0.90s]
+[0m13:20:43.094294 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 0.90s]
+[0m13:20:43.095565 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:20:43.096657 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:20:43.098410 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:20:43.099222 [debug] [Thread-3 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:20:43.099973 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:20:43.100847 [info ] [Thread-3 (]: 5 of 5 SKIP relation JAFFLE_SHOP.int_orders__pivoted ........................... [[33mSKIP[0m]
+[0m13:20:43.102298 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:20:43.103132 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:20:43.103829 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:20:43.109304 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:20:43.111507 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:20:43.104435 => 13:20:43.110990
+[0m13:20:43.112298 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:20:43.117522 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:20:43.120504 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:20:43.121995 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:20:43.122839 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:20:44.109012 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:20:44.116228 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:20:43.112839 => 13:20:44.115575
+[0m13:20:44.117206 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:20:44.252345 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f579c266-1956-4119-88cf-dc043af86022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c3d3d0>]}
+[0m13:20:44.254182 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 1.15s]
+[0m13:20:44.256390 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:20:44.261168 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:20:44.262054 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_customers' was properly closed.
+[0m13:20:44.262720 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_orders' was properly closed.
+[0m13:20:44.263351 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:20:44.263960 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:20:44.264681 [info ] [MainThread]: 
+[0m13:20:44.265413 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.87 seconds (3.87s).
+[0m13:20:44.267508 [debug] [MainThread]: Command end result
+[0m13:20:44.280952 [info ] [MainThread]: 
+[0m13:20:44.281623 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:20:44.282137 [info ] [MainThread]: 
+[0m13:20:44.282654 [error] [MainThread]:   Database Error in model stg_payments (models/staging/stg_payments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 11 at position 13 unexpected '/'.
+  compiled Code at target/run/jaffle_shop/models/staging/stg_payments.sql
+[0m13:20:44.283158 [info ] [MainThread]: 
+[0m13:20:44.283692 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=1 TOTAL=5
+[0m13:20:44.289030 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.1567845, "process_user_time": 4.609221, "process_kernel_time": 0.452207, "process_mem_max_rss": "144125952", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:20:44.290753 [debug] [MainThread]: Command `dbt run` failed at 13:20:44.290399 after 5.16 seconds
+[0m13:20:44.291501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e44210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f40b2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ceac6d0>]}
+[0m13:20:44.292120 [debug] [MainThread]: Flushing usage events
+[0m13:23:13.202167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e82a890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e586210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e584410>]}
+
+
+============================== 13:23:13.211972 | dfebd63b-0652-4a45-ae82-64dbe2175239 ==============================
+[0m13:23:13.211972 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:23:13.213319 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ben/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/ben/jaffle_shop/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:23:13.929965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4a92d0>]}
+[0m13:23:14.057715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f31b190>]}
+[0m13:23:14.059786 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:23:14.084320 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:23:14.192204 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:23:14.193625 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://macros/cents_to_dollars.sql
+[0m13:23:14.611232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa26390>]}
+[0m13:23:14.629704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f454390>]}
+[0m13:23:14.630478 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:23:14.631079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f641f90>]}
+[0m13:23:14.634927 [info ] [MainThread]: 
+[0m13:23:14.636229 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:23:14.637948 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:23:14.657139 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:23:14.657868 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:23:14.658396 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:23:15.601824 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:23:15.606521 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:23:15.766032 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:23:15.782289 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:23:15.783034 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:23:15.783620 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:23:16.338386 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m13:23:16.343417 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:23:16.501242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8cae10>]}
+[0m13:23:16.503240 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:23:16.504740 [info ] [MainThread]: 
+[0m13:23:16.511210 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:23:16.512191 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:23:16.513208 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:23:16.514194 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:23:16.514993 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:23:16.516213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:23:16.517833 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:23:16.518887 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:23:16.520283 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:23:16.521154 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:23:16.523051 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:23:16.529367 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:23:16.541180 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:23:16.541927 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:23:16.547982 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:23:16.549445 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:23:16.525121 => 13:23:16.548870
+[0m13:23:16.550362 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:23:16.556515 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:23:16.523830 => 13:23:16.556051
+[0m13:23:16.557222 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:23:16.575705 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:23:16.542897 => 13:23:16.574955
+[0m13:23:16.614170 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:23:16.634132 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:23:16.635189 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:23:16.643040 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:23:16.644703 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:23:16.645873 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:23:16.646633 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:23:16.647736 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:23:16.648269 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:23:16.648874 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:23:16.649448 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    round(1.0 *  / 100, 2) AS amount
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:23:16.649997 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:23:16.651454 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:23:17.245441 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:23:17.284671 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:23:16.563160 => 13:23:17.284132
+[0m13:23:17.285660 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:23:17.291555 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01b3aaf3-0001-c86b-0005-81260003f1be
+[0m13:23:17.292295 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 10 at position 17 unexpected '/'.
+[0m13:23:17.293654 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:23:16.635576 => 13:23:17.293141
+[0m13:23:17.294369 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:23:17.405815 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:23:17.413334 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:23:16.550787 => 13:23:17.412781
+[0m13:23:17.414398 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:23:17.423986 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa585d0>]}
+[0m13:23:17.425155 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 0.91s]
+[0m13:23:17.426401 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:23:17.458755 [debug] [Thread-3 (]: Database Error in model stg_payments (models/staging/stg_payments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 10 at position 17 unexpected '/'.
+  compiled Code at target/run/jaffle_shop/models/staging/stg_payments.sql
+[0m13:23:17.460771 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8f02d0>]}
+[0m13:23:17.462009 [error] [Thread-3 (]: 3 of 5 ERROR creating sql view model JAFFLE_SHOP.stg_payments .................. [[31mERROR[0m in 0.94s]
+[0m13:23:17.463067 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:23:17.575329 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fad3e10>]}
+[0m13:23:17.576946 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 1.06s]
+[0m13:23:17.578462 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:23:17.580771 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:23:17.582084 [debug] [Thread-1 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:23:17.583195 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:23:17.584421 [info ] [Thread-1 (]: 5 of 5 SKIP relation JAFFLE_SHOP.int_orders__pivoted ........................... [[33mSKIP[0m]
+[0m13:23:17.585975 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:23:17.586851 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:23:17.587703 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:23:17.593303 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:23:17.594595 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:23:17.588465 => 13:23:17.594220
+[0m13:23:17.595201 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:23:17.600487 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:23:17.603009 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:23:17.603658 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:23:17.604268 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:23:18.306415 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:23:18.313243 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:23:17.595578 => 13:23:18.312680
+[0m13:23:18.314234 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:23:18.451378 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfebd63b-0652-4a45-ae82-64dbe2175239', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fab0e90>]}
+[0m13:23:18.453215 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 0.87s]
+[0m13:23:18.455324 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:23:18.459567 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:23:18.460497 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_customers' was properly closed.
+[0m13:23:18.461265 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_orders' was properly closed.
+[0m13:23:18.461998 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:23:18.462608 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:23:18.463329 [info ] [MainThread]: 
+[0m13:23:18.464076 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.83 seconds (3.83s).
+[0m13:23:18.466155 [debug] [MainThread]: Command end result
+[0m13:23:18.481001 [info ] [MainThread]: 
+[0m13:23:18.481673 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:23:18.482186 [info ] [MainThread]: 
+[0m13:23:18.482694 [error] [MainThread]:   Database Error in model stg_payments (models/staging/stg_payments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 10 at position 17 unexpected '/'.
+  compiled Code at target/run/jaffle_shop/models/staging/stg_payments.sql
+[0m13:23:18.483202 [info ] [MainThread]: 
+[0m13:23:18.483743 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=1 TOTAL=5
+[0m13:23:18.486712 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.369939, "process_user_time": 4.869076, "process_kernel_time": 0.660874, "process_mem_max_rss": "143007744", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:23:18.487975 [debug] [MainThread]: Command `dbt run` failed at 13:23:18.487709 after 5.37 seconds
+[0m13:23:18.488872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e513e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb95250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb969d0>]}
+[0m13:23:18.490143 [debug] [MainThread]: Flushing usage events
+[0m13:25:42.169523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c4e650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ba3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107909310>]}
+
+
+============================== 13:25:42.178850 | 8e41974a-055c-4bd8-9ffa-85c6c1745663 ==============================
+[0m13:25:42.178850 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:25:42.180259 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ben/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ben/jaffle_shop/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:25:42.924849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107918850>]}
+[0m13:25:43.051937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ba3710>]}
+[0m13:25:43.053990 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:25:43.079227 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:25:43.187438 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:25:43.188575 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/staging/stg_payments.sql
+[0m13:25:43.594973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cc8b50>]}
+[0m13:25:43.613270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c44050>]}
+[0m13:25:43.614155 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:25:43.614833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b1fd50>]}
+[0m13:25:43.618499 [info ] [MainThread]: 
+[0m13:25:43.619796 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:25:43.621515 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:25:43.640462 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:25:43.641192 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:25:43.641723 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:25:44.459271 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:25:44.464334 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:25:44.629906 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:25:44.646041 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:25:44.646782 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:25:44.647357 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:25:45.207018 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m13:25:45.212358 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:25:45.357528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108747950>]}
+[0m13:25:45.359501 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:25:45.360425 [info ] [MainThread]: 
+[0m13:25:45.366207 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:25:45.367298 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:25:45.368244 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:25:45.369194 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:25:45.370037 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:25:45.371240 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:25:45.372015 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:25:45.373253 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:25:45.373903 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:25:45.375027 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:25:45.375658 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:25:45.386704 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:25:45.387478 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:25:45.391552 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:25:45.398668 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:25:45.400109 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:25:45.376041 => 13:25:45.399653
+[0m13:25:45.401204 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:25:45.407579 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:25:45.387946 => 13:25:45.407033
+[0m13:25:45.408343 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:25:45.409244 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:25:45.392470 => 13:25:45.408728
+[0m13:25:45.435322 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:25:45.496358 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:25:45.497445 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:25:45.498284 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:25:45.500123 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:25:45.500819 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    round(1.0 *  / 100, 2) AS amount
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:25:45.502035 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:25:45.502584 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:25:45.503605 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:25:45.504131 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:25:45.505694 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:25:45.506995 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:25:45.507748 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:25:46.014778 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01b3aaf5-0001-c86b-0005-81260003f1c6
+[0m13:25:46.015855 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 10 at position 17 unexpected '/'.
+[0m13:25:46.017503 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:25:45.454782 => 13:25:46.016722
+[0m13:25:46.018393 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:25:46.183549 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:25:46.192847 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:25:46.245626 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:25:45.409607 => 13:25:46.245250
+[0m13:25:46.247945 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:25:45.401964 => 13:25:46.247622
+[0m13:25:46.248914 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:25:46.249774 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:25:46.252896 [debug] [Thread-3 (]: Database Error in model stg_payments (models/staging/stg_payments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 10 at position 17 unexpected '/'.
+  compiled Code at target/run/jaffle_shop/models/staging/stg_payments.sql
+[0m13:25:46.256797 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f3d550>]}
+[0m13:25:46.259179 [error] [Thread-3 (]: 3 of 5 ERROR creating sql view model JAFFLE_SHOP.stg_payments .................. [[31mERROR[0m in 0.88s]
+[0m13:25:46.260661 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:25:46.395561 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e01150>]}
+[0m13:25:46.397420 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 1.02s]
+[0m13:25:46.399759 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:25:46.406644 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f641d0>]}
+[0m13:25:46.407886 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 1.03s]
+[0m13:25:46.409094 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:25:46.410702 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:25:46.411575 [debug] [Thread-3 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:25:46.412507 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:25:46.413337 [info ] [Thread-3 (]: 5 of 5 SKIP relation JAFFLE_SHOP.int_orders__pivoted ........................... [[33mSKIP[0m]
+[0m13:25:46.414808 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:25:46.415698 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:25:46.416561 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:25:46.421643 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:25:46.422802 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:25:46.417342 => 13:25:46.422453
+[0m13:25:46.423532 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:25:46.428527 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:25:46.432776 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:25:46.434359 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:25:46.435786 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:25:47.191536 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:25:47.199982 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:25:46.423913 => 13:25:47.199018
+[0m13:25:47.200859 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:25:47.331360 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e41974a-055c-4bd8-9ffa-85c6c1745663', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e6edd0>]}
+[0m13:25:47.332384 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 0.92s]
+[0m13:25:47.333322 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:25:47.336089 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:25:47.336707 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_customers' was properly closed.
+[0m13:25:47.337204 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_orders' was properly closed.
+[0m13:25:47.337670 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:25:47.338113 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:25:47.338651 [info ] [MainThread]: 
+[0m13:25:47.339211 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.72 seconds (3.72s).
+[0m13:25:47.340860 [debug] [MainThread]: Command end result
+[0m13:25:47.354607 [info ] [MainThread]: 
+[0m13:25:47.355570 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:25:47.356423 [info ] [MainThread]: 
+[0m13:25:47.357294 [error] [MainThread]:   Database Error in model stg_payments (models/staging/stg_payments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 10 at position 17 unexpected '/'.
+  compiled Code at target/run/jaffle_shop/models/staging/stg_payments.sql
+[0m13:25:47.358153 [info ] [MainThread]: 
+[0m13:25:47.359044 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=1 TOTAL=5
+[0m13:25:47.363329 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.281146, "process_user_time": 4.828182, "process_kernel_time": 0.679488, "process_mem_max_rss": "143327232", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:25:47.364782 [debug] [MainThread]: Command `dbt run` failed at 13:25:47.364406 after 5.28 seconds
+[0m13:25:47.366394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ba3150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f1a090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f19b90>]}
+[0m13:25:47.367816 [debug] [MainThread]: Flushing usage events
+[0m13:32:31.937974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105599e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052c9810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052ca1d0>]}
+
+
+============================== 13:32:31.946278 | 537844e5-b0db-4ee8-bf0d-41387c125650 ==============================
+[0m13:32:31.946278 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:32:31.947339 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ben/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/ben/jaffle_shop/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:32:32.638827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e5c310>]}
+[0m13:32:32.769821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055ce090>]}
+[0m13:32:32.771747 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:32:32.794704 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:32:32.900606 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:32:32.901753 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/staging/stg_payments.sql
+[0m13:32:33.316515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064bff10>]}
+[0m13:32:33.334231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106042f90>]}
+[0m13:32:33.335008 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:32:33.335605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105002250>]}
+[0m13:32:33.339280 [info ] [MainThread]: 
+[0m13:32:33.340608 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:32:33.342339 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:32:33.361559 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:32:33.362269 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:32:33.362805 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:32:34.159216 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:32:34.164536 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:32:34.315268 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:32:34.332118 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:32:34.332865 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:32:34.333437 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:32:34.882202 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m13:32:34.887194 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:32:35.045138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ff11d0>]}
+[0m13:32:35.047109 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:32:35.048145 [info ] [MainThread]: 
+[0m13:32:35.054472 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:32:35.055459 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:32:35.056337 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:32:35.057149 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:32:35.058069 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:32:35.058940 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:32:35.060171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:32:35.061388 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:32:35.062555 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:32:35.063132 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:32:35.063692 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:32:35.064233 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:32:35.074838 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:32:35.079486 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:32:35.086330 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:32:35.087946 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:32:35.064597 => 13:32:35.087471
+[0m13:32:35.089014 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:32:35.089980 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:32:35.075335 => 13:32:35.089562
+[0m13:32:35.109534 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:32:35.115936 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:32:35.081117 => 13:32:35.115487
+[0m13:32:35.116635 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:32:35.172183 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:32:35.178540 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:32:35.184228 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:32:35.186000 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:32:35.186974 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:32:35.187840 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:32:35.188363 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    round(1.0 * amount / 100, 2) AS amount
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:32:35.188964 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:32:35.189672 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:32:35.190312 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:32:35.190871 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:32:35.191417 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:32:35.798729 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:32:35.827251 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:32:35.852291 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:32:35.123360 => 13:32:35.851959
+[0m13:32:35.853783 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:32:35.847501 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:32:35.090412 => 13:32:35.847140
+[0m13:32:35.854549 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:32:35.857856 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:32:35.110054 => 13:32:35.857540
+[0m13:32:35.858541 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:32:35.860336 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:32:36.006584 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105faa510>]}
+[0m13:32:36.008920 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10621bc90>]}
+[0m13:32:36.010411 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 0.95s]
+[0m13:32:36.011936 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 0.95s]
+[0m13:32:36.014741 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:32:36.016142 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:32:36.019555 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064d2690>]}
+[0m13:32:36.020875 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:32:36.022039 [info ] [Thread-3 (]: 3 of 5 OK created sql view model JAFFLE_SHOP.stg_payments ...................... [[32mSUCCESS 1[0m in 0.96s]
+[0m13:32:36.022962 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:32:36.024035 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:32:36.025258 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:32:36.026298 [debug] [Thread-1 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:32:36.027021 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:32:36.027783 [info ] [Thread-1 (]: 5 of 5 START sql view model JAFFLE_SHOP.int_orders__pivoted .................... [RUN]
+[0m13:32:36.032674 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:32:36.034460 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers, now model.jaffle_shop.int_orders__pivoted)
+[0m13:32:36.035284 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.int_orders__pivoted
+[0m13:32:36.041179 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:32:36.042408 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:32:36.028216 => 13:32:36.041997
+[0m13:32:36.043361 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:32:36.052860 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:32:36.054297 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (compile): 13:32:36.035691 => 13:32:36.053580
+[0m13:32:36.055785 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.int_orders__pivoted
+[0m13:32:36.064797 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:32:36.068542 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:32:36.070030 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:32:36.071359 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:32:36.074285 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.int_orders__pivoted"
+[0m13:32:36.076860 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.int_orders__pivoted"} */
+create or replace   view RAW.JAFFLE_SHOP.int_orders__pivoted
+  
+   as (
+    
+
+
+
+WITH payments AS (
+    SELECT p.id AS id,
+           p.order_id AS order_id,
+           p.payment_method AS payment_method,
+           p.amount AS amount,
+           o.status AS status
+    FROM RAW.JAFFLE_SHOP.stg_payments p
+    JOIN RAW.JAFFLE_SHOP.stg_orders o
+    ON p.order_id = o.order_id
+),
+pivoted AS (
+    SELECT
+        order_id,
+        SUM(CASE WHEN payment_method = 'bank_transfer' THEN amount ELSE 0 END) AS bank_transfer_amount,
+        SUM(CASE WHEN payment_method = 'coupon' THEN amount ELSE 0 END) AS coupon_amount,
+        SUM(CASE WHEN payment_method = 'credit_card' THEN amount ELSE 0 END) AS credit_card_amount,
+        SUM(CASE WHEN payment_method = 'gift_card' THEN amount ELSE 0 END) AS gift_card_amount
+    FROM payments
+    WHERE status = 'completed'
+    GROUP BY 1
+)
+
+SELECT * FROM pivoted
+  );
+[0m13:32:36.077894 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:32:36.687316 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:32:36.694264 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:32:36.044630 => 13:32:36.693617
+[0m13:32:36.695186 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:32:36.750519 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:32:36.757074 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (execute): 13:32:36.056601 => 13:32:36.756560
+[0m13:32:36.758036 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: Close
+[0m13:32:36.869466 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066ec990>]}
+[0m13:32:36.871832 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 0.84s]
+[0m13:32:36.873745 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:32:36.921789 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '537844e5-b0db-4ee8-bf0d-41387c125650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106510ad0>]}
+[0m13:32:36.924305 [info ] [Thread-1 (]: 5 of 5 OK created sql view model JAFFLE_SHOP.int_orders__pivoted ............... [[32mSUCCESS 1[0m in 0.89s]
+[0m13:32:36.926073 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:32:36.930881 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:32:36.931856 [debug] [MainThread]: Connection 'model.jaffle_shop.int_orders__pivoted' was properly closed.
+[0m13:32:36.932495 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_orders' was properly closed.
+[0m13:32:36.933103 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:32:36.933689 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:32:36.934400 [info ] [MainThread]: 
+[0m13:32:36.935153 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.59 seconds (3.59s).
+[0m13:32:36.938216 [debug] [MainThread]: Command end result
+[0m13:32:36.952303 [info ] [MainThread]: 
+[0m13:32:36.952989 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:32:36.953521 [info ] [MainThread]: 
+[0m13:32:36.954075 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m13:32:36.955879 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.102632, "process_user_time": 5.039018, "process_kernel_time": 0.640815, "process_mem_max_rss": "141967360", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:32:36.957515 [debug] [MainThread]: Command `dbt run` succeeded at 13:32:36.956950 after 5.10 seconds
+[0m13:32:36.958688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10501b610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b30690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1012b3d90>]}
+[0m13:32:36.959928 [debug] [MainThread]: Flushing usage events
+[0m13:34:37.928448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083b4d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c020c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c5a0850>]}
+
+
+============================== 13:34:37.935395 | 976eac3a-37a8-41b7-96cc-605aac18c2c1 ==============================
+[0m13:34:37.935395 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:34:37.936501 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ben/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/ben/jaffle_shop/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:34:38.465351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf9a690>]}
+[0m13:34:38.591274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf33c90>]}
+[0m13:34:38.592569 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:34:38.616285 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:34:38.672024 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:34:38.673176 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/staging/stg_payments.sql
+[0m13:34:39.080983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d26b950>]}
+[0m13:34:39.099437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d108310>]}
+[0m13:34:39.100243 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:34:39.100862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d143f50>]}
+[0m13:34:39.104713 [info ] [MainThread]: 
+[0m13:34:39.106006 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:34:39.107801 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:34:39.127193 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:34:39.127910 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:34:39.128466 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:34:39.820613 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:34:39.825429 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:34:40.019835 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:34:40.037530 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:34:40.038297 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:34:40.038892 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:34:40.516770 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.0 seconds
+[0m13:34:40.521768 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:34:40.685625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d318210>]}
+[0m13:34:40.687705 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:34:40.688744 [info ] [MainThread]: 
+[0m13:34:40.693845 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:34:40.694871 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:34:40.695827 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:34:40.696812 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:34:40.697604 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:34:40.698873 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:34:40.699663 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:34:40.700877 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:34:40.701538 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:34:40.702685 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:34:40.703254 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:34:40.714369 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:34:40.715103 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:34:40.718739 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:34:40.724693 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:34:40.726307 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:34:40.703639 => 13:34:40.725866
+[0m13:34:40.727111 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:34:40.727945 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:34:40.719414 => 13:34:40.727536
+[0m13:34:40.728582 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:34:40.715515 => 13:34:40.728269
+[0m13:34:40.751445 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:34:40.774170 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:34:40.774933 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:34:40.779399 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:34:40.784307 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:34:40.785652 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:34:40.786612 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:34:40.787400 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:34:40.788494 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:34:40.789920 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:34:40.791709 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:34:40.792501 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    round(1.0 * amount / 100, 2) AS amount_usd
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:34:40.793186 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:34:40.794213 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:34:41.402866 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:34:41.442874 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:34:40.780252 => 13:34:41.442514
+[0m13:34:41.444493 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:34:41.445156 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:34:41.448515 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:34:40.728893 => 13:34:41.448150
+[0m13:34:41.450868 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:34:41.469897 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:34:41.474166 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:34:40.775367 => 13:34:41.473818
+[0m13:34:41.474821 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:34:41.596962 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d485190>]}
+[0m13:34:41.600337 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 0.90s]
+[0m13:34:41.602676 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:34:41.604908 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf64f90>]}
+[0m13:34:41.606637 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 0.90s]
+[0m13:34:41.608939 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:34:41.610160 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:34:41.611201 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:34:41.612793 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4854d0>]}
+[0m13:34:41.614057 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:34:41.615013 [info ] [Thread-3 (]: 3 of 5 OK created sql view model JAFFLE_SHOP.stg_payments ...................... [[32mSUCCESS 1[0m in 0.91s]
+[0m13:34:41.615914 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:34:41.616965 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:34:41.622071 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:34:41.623124 [debug] [Thread-2 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:34:41.624090 [info ] [Thread-2 (]: 5 of 5 START sql view model JAFFLE_SHOP.int_orders__pivoted .................... [RUN]
+[0m13:34:41.626288 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_orders, now model.jaffle_shop.int_orders__pivoted)
+[0m13:34:41.627004 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.int_orders__pivoted
+[0m13:34:41.635396 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:34:41.636873 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:34:41.617450 => 13:34:41.636346
+[0m13:34:41.637929 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:34:41.643276 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:34:41.644656 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.int_orders__pivoted (compile): 13:34:41.627483 => 13:34:41.644244
+[0m13:34:41.645510 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.int_orders__pivoted
+[0m13:34:41.653472 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:34:41.657208 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:34:41.658680 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:34:41.659998 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:34:41.664223 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.int_orders__pivoted"
+[0m13:34:41.665722 [debug] [Thread-2 (]: On model.jaffle_shop.int_orders__pivoted: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.int_orders__pivoted"} */
+create or replace   view RAW.JAFFLE_SHOP.int_orders__pivoted
+  
+   as (
+    
+
+
+
+WITH payments AS (
+    SELECT p.id AS id,
+           p.order_id AS order_id,
+           p.payment_method AS payment_method,
+           p.amount AS amount,
+           o.status AS status
+    FROM RAW.JAFFLE_SHOP.stg_payments p
+    JOIN RAW.JAFFLE_SHOP.stg_orders o
+    ON p.order_id = o.order_id
+),
+pivoted AS (
+    SELECT
+        order_id,
+        SUM(CASE WHEN payment_method = 'bank_transfer' THEN amount ELSE 0 END) AS bank_transfer_amount,
+        SUM(CASE WHEN payment_method = 'coupon' THEN amount ELSE 0 END) AS coupon_amount,
+        SUM(CASE WHEN payment_method = 'credit_card' THEN amount ELSE 0 END) AS credit_card_amount,
+        SUM(CASE WHEN payment_method = 'gift_card' THEN amount ELSE 0 END) AS gift_card_amount
+    FROM payments
+    WHERE status = 'completed'
+    GROUP BY 1
+)
+
+SELECT * FROM pivoted
+  );
+[0m13:34:41.666575 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:34:42.197273 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01b3aafe-0001-c86f-0005-81260003e28a
+[0m13:34:42.198369 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 12 at position 11
+invalid identifier 'P.AMOUNT'
+[0m13:34:42.199759 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.int_orders__pivoted (execute): 13:34:41.646066 => 13:34:42.199227
+[0m13:34:42.200695 [debug] [Thread-2 (]: On model.jaffle_shop.int_orders__pivoted: Close
+[0m13:34:42.264263 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:34:42.270448 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:34:41.638554 => 13:34:42.269922
+[0m13:34:42.273253 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:34:42.381345 [debug] [Thread-2 (]: Database Error in model int_orders__pivoted (models/marts/core/int_orders__pivoted.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 11
+  invalid identifier 'P.AMOUNT'
+  compiled Code at target/run/jaffle_shop/models/marts/core/int_orders__pivoted.sql
+[0m13:34:42.382625 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d5396d0>]}
+[0m13:34:42.384190 [error] [Thread-2 (]: 5 of 5 ERROR creating sql view model JAFFLE_SHOP.int_orders__pivoted ........... [[31mERROR[0m in 0.76s]
+[0m13:34:42.385890 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:34:42.414662 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '976eac3a-37a8-41b7-96cc-605aac18c2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4fbdd0>]}
+[0m13:34:42.416195 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 0.80s]
+[0m13:34:42.417604 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:34:42.421096 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:34:42.421823 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_customers' was properly closed.
+[0m13:34:42.422471 [debug] [MainThread]: Connection 'model.jaffle_shop.int_orders__pivoted' was properly closed.
+[0m13:34:42.423097 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:34:42.423693 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:34:42.424623 [info ] [MainThread]: 
+[0m13:34:42.425426 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.32 seconds (3.32s).
+[0m13:34:42.428713 [debug] [MainThread]: Command end result
+[0m13:34:42.444840 [info ] [MainThread]: 
+[0m13:34:42.445644 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:34:42.446194 [info ] [MainThread]: 
+[0m13:34:42.446721 [error] [MainThread]:   Database Error in model int_orders__pivoted (models/marts/core/int_orders__pivoted.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 11
+  invalid identifier 'P.AMOUNT'
+  compiled Code at target/run/jaffle_shop/models/marts/core/int_orders__pivoted.sql
+[0m13:34:42.447310 [info ] [MainThread]: 
+[0m13:34:42.447901 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m13:34:42.449798 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.6035523, "process_user_time": 4.722194, "process_kernel_time": 0.448025, "process_mem_max_rss": "144666624", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:34:42.450767 [debug] [MainThread]: Command `dbt run` failed at 13:34:42.450552 after 4.60 seconds
+[0m13:34:42.451466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf64a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c599010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1fa690>]}
+[0m13:34:42.452370 [debug] [MainThread]: Flushing usage events
+[0m13:35:21.699692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf13250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cad16d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cad36d0>]}
+
+
+============================== 13:35:21.705680 | f71eb853-cad7-44ba-a1d8-f6256d005435 ==============================
+[0m13:35:21.705680 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:35:21.707106 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ben/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/ben/jaffle_shop/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:35:22.239045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cab0350>]}
+[0m13:35:22.364185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd61810>]}
+[0m13:35:22.365443 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:35:22.388508 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:35:22.442795 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:35:22.443490 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:35:22.453590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dc66e90>]}
+[0m13:35:22.470712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10daca050>]}
+[0m13:35:22.471503 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:35:22.472312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db28250>]}
+[0m13:35:22.475597 [info ] [MainThread]: 
+[0m13:35:22.476892 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:35:22.478672 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:35:22.500104 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:35:22.501223 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:35:22.501891 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:35:23.103048 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:35:23.107331 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:35:23.296162 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:35:23.312883 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:35:23.313674 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:35:23.314291 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:35:23.826897 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m13:35:23.832095 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:35:23.984476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d97e5d0>]}
+[0m13:35:23.986472 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:35:23.987386 [info ] [MainThread]: 
+[0m13:35:23.992721 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:35:23.994058 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:35:23.995456 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:35:23.996464 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:35:23.997462 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:35:23.998355 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:35:23.999567 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:35:24.000797 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:35:24.002077 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:35:24.002806 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:35:24.003559 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:35:24.004156 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:35:24.015986 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:35:24.021048 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:35:24.027329 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:35:24.028781 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:35:24.004539 => 13:35:24.028340
+[0m13:35:24.029417 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:35:24.043276 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:35:24.016502 => 13:35:24.042581
+[0m13:35:24.049581 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:35:24.021839 => 13:35:24.049116
+[0m13:35:24.063575 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:35:24.079771 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:35:24.080510 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:35:24.085128 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:35:24.089721 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:35:24.091116 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:35:24.092557 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:35:24.093143 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:35:24.094102 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:35:24.094687 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:35:24.095261 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:35:24.095830 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    round(1.0 * amount / 100, 2) AS amount_usd
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:35:24.096380 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:35:24.098718 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:35:24.668585 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:35:24.700112 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:35:24.715886 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:35:24.080916 => 13:35:24.715536
+[0m13:35:24.716596 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:35:24.719208 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:35:24.720586 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:35:24.029895 => 13:35:24.720259
+[0m13:35:24.724391 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:35:24.085857 => 13:35:24.724063
+[0m13:35:24.725208 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:35:24.725880 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:35:24.872755 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ded9dd0>]}
+[0m13:35:24.874510 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 0.87s]
+[0m13:35:24.876296 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:35:24.878110 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbd1090>]}
+[0m13:35:24.880983 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 0.88s]
+[0m13:35:24.882569 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:35:24.884134 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddc3f50>]}
+[0m13:35:24.885368 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:35:24.886401 [info ] [Thread-3 (]: 3 of 5 OK created sql view model JAFFLE_SHOP.stg_payments ...................... [[32mSUCCESS 1[0m in 0.88s]
+[0m13:35:24.887270 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:35:24.888405 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:35:24.889743 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:35:24.890895 [debug] [Thread-1 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:35:24.891651 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:35:24.892372 [info ] [Thread-1 (]: 5 of 5 START sql view model JAFFLE_SHOP.int_orders__pivoted .................... [RUN]
+[0m13:35:24.897643 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:35:24.898845 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers, now model.jaffle_shop.int_orders__pivoted)
+[0m13:35:24.899710 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.int_orders__pivoted
+[0m13:35:24.907376 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:35:24.908565 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:35:24.892810 => 13:35:24.908162
+[0m13:35:24.909248 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:35:24.914676 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:35:24.916038 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (compile): 13:35:24.900125 => 13:35:24.915337
+[0m13:35:24.917854 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.int_orders__pivoted
+[0m13:35:24.927612 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:35:24.930139 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:35:24.931146 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:35:24.932203 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:35:24.936293 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.int_orders__pivoted"
+[0m13:35:24.937209 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.int_orders__pivoted"} */
+create or replace   view RAW.JAFFLE_SHOP.int_orders__pivoted
+  
+   as (
+    
+
+
+
+WITH payments AS (
+    SELECT p.id AS id,
+           p.order_id AS order_id,
+           p.payment_method AS payment_method,
+           p.amount AS amount,
+           o.status AS status
+    FROM RAW.JAFFLE_SHOP.stg_payments p
+    JOIN RAW.JAFFLE_SHOP.stg_orders o
+    ON p.order_id = o.order_id
+),
+pivoted AS (
+    SELECT
+        order_id,
+        SUM(CASE WHEN payment_method = 'bank_transfer' THEN amount ELSE 0 END) AS bank_transfer_amount,
+        SUM(CASE WHEN payment_method = 'coupon' THEN amount ELSE 0 END) AS coupon_amount,
+        SUM(CASE WHEN payment_method = 'credit_card' THEN amount ELSE 0 END) AS credit_card_amount,
+        SUM(CASE WHEN payment_method = 'gift_card' THEN amount ELSE 0 END) AS gift_card_amount
+    FROM payments
+    WHERE status = 'completed'
+    GROUP BY 1
+)
+
+SELECT * FROM pivoted
+  );
+[0m13:35:24.937983 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:35:25.439790 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b3aaff-0001-c86b-0005-81260003f20a
+[0m13:35:25.440922 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 12 at position 11
+invalid identifier 'P.AMOUNT'
+[0m13:35:25.442376 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (execute): 13:35:24.919182 => 13:35:25.441840
+[0m13:35:25.443301 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: Close
+[0m13:35:25.546975 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:35:25.554020 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:35:24.909765 => 13:35:25.553487
+[0m13:35:25.555014 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:35:25.586457 [debug] [Thread-1 (]: Database Error in model int_orders__pivoted (models/marts/core/int_orders__pivoted.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 11
+  invalid identifier 'P.AMOUNT'
+  compiled Code at target/run/jaffle_shop/models/marts/core/int_orders__pivoted.sql
+[0m13:35:25.587725 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db9ba90>]}
+[0m13:35:25.589100 [error] [Thread-1 (]: 5 of 5 ERROR creating sql view model JAFFLE_SHOP.int_orders__pivoted ........... [[31mERROR[0m in 0.69s]
+[0m13:35:25.590524 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:35:25.688383 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f71eb853-cad7-44ba-a1d8-f6256d005435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dc87950>]}
+[0m13:35:25.690199 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 0.80s]
+[0m13:35:25.692025 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:35:25.696329 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:35:25.697256 [debug] [MainThread]: Connection 'model.jaffle_shop.int_orders__pivoted' was properly closed.
+[0m13:35:25.698046 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_orders' was properly closed.
+[0m13:35:25.698717 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:35:25.699328 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:35:25.700101 [info ] [MainThread]: 
+[0m13:35:25.700868 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.22 seconds (3.22s).
+[0m13:35:25.703108 [debug] [MainThread]: Command end result
+[0m13:35:25.719362 [info ] [MainThread]: 
+[0m13:35:25.720311 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:35:25.720884 [info ] [MainThread]: 
+[0m13:35:25.721400 [error] [MainThread]:   Database Error in model int_orders__pivoted (models/marts/core/int_orders__pivoted.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 11
+  invalid identifier 'P.AMOUNT'
+  compiled Code at target/run/jaffle_shop/models/marts/core/int_orders__pivoted.sql
+[0m13:35:25.721923 [info ] [MainThread]: 
+[0m13:35:25.722475 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m13:35:25.724547 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.1113963, "process_user_time": 4.36107, "process_kernel_time": 0.447005, "process_mem_max_rss": "139055104", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:35:25.725754 [debug] [MainThread]: Command `dbt run` failed at 13:35:25.725448 after 4.11 seconds
+[0m13:35:25.726794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d127950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cad3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dab4210>]}
+[0m13:35:25.727752 [debug] [MainThread]: Flushing usage events
+[0m13:36:59.924658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b2fe10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108779890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084e9890>]}
+
+
+============================== 13:36:59.930605 | b6bed763-86fb-4aab-bde1-06507a9ffb58 ==============================
+[0m13:36:59.930605 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:36:59.932013 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/ben/.dbt', 'log_path': '/Users/ben/jaffle_shop/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:37:00.460250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093f8090>]}
+[0m13:37:00.585779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10939fb10>]}
+[0m13:37:00.587078 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:37:00.610164 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:37:00.665331 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:37:00.666059 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:37:00.676647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096b37d0>]}
+[0m13:37:00.694491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10951ab50>]}
+[0m13:37:00.695339 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:37:00.695970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087a4390>]}
+[0m13:37:00.699608 [info ] [MainThread]: 
+[0m13:37:00.700954 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:37:00.703457 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:37:00.724940 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:37:00.725644 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:37:00.726193 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:37:01.421388 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:37:01.426037 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:37:01.581193 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:37:01.597693 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:37:01.598543 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:37:01.599137 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:37:02.131297 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m13:37:02.136364 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:37:02.292472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10945d9d0>]}
+[0m13:37:02.294561 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:37:02.295470 [info ] [MainThread]: 
+[0m13:37:02.300957 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:37:02.302089 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:37:02.303023 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:37:02.303945 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:37:02.305088 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:37:02.305910 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:37:02.306732 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:37:02.307724 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:37:02.309165 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:37:02.310312 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:37:02.320996 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:37:02.321720 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:37:02.322396 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:37:02.327206 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:37:02.335327 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:37:02.336272 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:37:02.310709 => 13:37:02.335825
+[0m13:37:02.337512 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:37:02.322962 => 13:37:02.337137
+[0m13:37:02.338173 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:37:02.338865 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:37:02.339522 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:37:02.328106 => 13:37:02.339213
+[0m13:37:02.401222 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:37:02.401907 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:37:02.406664 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:37:02.411448 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:37:02.413315 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:37:02.414384 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:37:02.415020 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:37:02.415995 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:37:02.416640 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    round(1.0 * amount / 100, 2) AS amount_usd
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:37:02.417379 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:37:02.418013 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:37:02.418756 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:37:02.420307 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:37:02.987933 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:37:03.004728 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:37:03.045460 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:37:02.339888 => 13:37:03.044898
+[0m13:37:03.046362 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:37:02.407360 => 13:37:03.046003
+[0m13:37:03.046996 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:37:03.047597 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:37:03.055728 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:37:03.059255 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:37:02.352117 => 13:37:03.058925
+[0m13:37:03.059890 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:37:03.198387 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096bf8d0>]}
+[0m13:37:03.200265 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096bda10>]}
+[0m13:37:03.201979 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096b1d50>]}
+[0m13:37:03.203369 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 0.89s]
+[0m13:37:03.204889 [info ] [Thread-3 (]: 3 of 5 OK created sql view model JAFFLE_SHOP.stg_payments ...................... [[32mSUCCESS 1[0m in 0.89s]
+[0m13:37:03.206162 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 0.89s]
+[0m13:37:03.207469 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:37:03.208664 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:37:03.209649 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:37:03.211409 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:37:03.212183 [debug] [Thread-1 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:37:03.212981 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:37:03.213805 [info ] [Thread-1 (]: 5 of 5 START sql view model JAFFLE_SHOP.int_orders__pivoted .................... [RUN]
+[0m13:37:03.215107 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:37:03.216051 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers, now model.jaffle_shop.int_orders__pivoted)
+[0m13:37:03.216641 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:37:03.217200 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.int_orders__pivoted
+[0m13:37:03.222435 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:37:03.228270 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:37:03.229491 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:37:03.217567 => 13:37:03.229140
+[0m13:37:03.230089 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:37:03.234991 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:37:03.236077 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (compile): 13:37:03.222901 => 13:37:03.235666
+[0m13:37:03.236838 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.int_orders__pivoted
+[0m13:37:03.245140 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:37:03.246096 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:37:03.247075 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:37:03.248830 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:37:03.255540 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.int_orders__pivoted"
+[0m13:37:03.257357 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.int_orders__pivoted"} */
+create or replace   view RAW.JAFFLE_SHOP.int_orders__pivoted
+  
+   as (
+    
+
+
+
+WITH payments AS (
+    SELECT p.id AS id,
+           p.order_id AS order_id,
+           p.payment_method AS payment_method,
+           p.amount AS amount,
+           o.status AS status
+    FROM RAW.JAFFLE_SHOP.stg_payments p
+    JOIN RAW.JAFFLE_SHOP.stg_orders o
+    ON p.order_id = o.order_id
+),
+pivoted AS (
+    SELECT
+        order_id,
+        SUM(CASE WHEN payment_method = 'bank_transfer' THEN amount ELSE 0 END) AS bank_transfer_amount,
+        SUM(CASE WHEN payment_method = 'coupon' THEN amount ELSE 0 END) AS coupon_amount,
+        SUM(CASE WHEN payment_method = 'credit_card' THEN amount ELSE 0 END) AS credit_card_amount,
+        SUM(CASE WHEN payment_method = 'gift_card' THEN amount ELSE 0 END) AS gift_card_amount
+    FROM payments
+    WHERE status = 'completed'
+    GROUP BY 1
+)
+
+SELECT * FROM pivoted
+  );
+[0m13:37:03.259072 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:37:03.826963 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b3ab01-0001-c86b-0005-81260003f212
+[0m13:37:03.828079 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 12 at position 11
+invalid identifier 'P.AMOUNT'
+[0m13:37:03.829458 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (execute): 13:37:03.237311 => 13:37:03.828933
+[0m13:37:03.830386 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: Close
+[0m13:37:03.977467 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:37:03.986805 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:37:03.230516 => 13:37:03.986289
+[0m13:37:03.987696 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:37:03.993812 [debug] [Thread-1 (]: Database Error in model int_orders__pivoted (models/marts/core/int_orders__pivoted.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 11
+  invalid identifier 'P.AMOUNT'
+  compiled Code at target/run/jaffle_shop/models/marts/core/int_orders__pivoted.sql
+[0m13:37:03.994746 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10997a950>]}
+[0m13:37:03.995744 [error] [Thread-1 (]: 5 of 5 ERROR creating sql view model JAFFLE_SHOP.int_orders__pivoted ........... [[31mERROR[0m in 0.78s]
+[0m13:37:03.997364 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:37:04.142454 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6bed763-86fb-4aab-bde1-06507a9ffb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109873d90>]}
+[0m13:37:04.144234 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 0.93s]
+[0m13:37:04.145976 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:37:04.150090 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:37:04.151002 [debug] [MainThread]: Connection 'model.jaffle_shop.int_orders__pivoted' was properly closed.
+[0m13:37:04.151768 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_orders' was properly closed.
+[0m13:37:04.152453 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:37:04.153039 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:37:04.153811 [info ] [MainThread]: 
+[0m13:37:04.154636 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.45 seconds (3.45s).
+[0m13:37:04.156899 [debug] [MainThread]: Command end result
+[0m13:37:04.171962 [info ] [MainThread]: 
+[0m13:37:04.172641 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:37:04.173154 [info ] [MainThread]: 
+[0m13:37:04.173683 [error] [MainThread]:   Database Error in model int_orders__pivoted (models/marts/core/int_orders__pivoted.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 11
+  invalid identifier 'P.AMOUNT'
+  compiled Code at target/run/jaffle_shop/models/marts/core/int_orders__pivoted.sql
+[0m13:37:04.174207 [info ] [MainThread]: 
+[0m13:37:04.174738 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m13:37:04.176652 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.331591, "process_user_time": 4.327137, "process_kernel_time": 0.432081, "process_mem_max_rss": "138067968", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:37:04.177820 [debug] [MainThread]: Command `dbt run` failed at 13:37:04.177420 after 4.33 seconds
+[0m13:37:04.178910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10846f490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108aeb650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047340d0>]}
+[0m13:37:04.180113 [debug] [MainThread]: Flushing usage events
+[0m13:38:05.533550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1130da790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d94f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e6f1d0>]}
+
+
+============================== 13:38:05.539453 | 72a3bd10-02c4-412b-89ec-0dfe18223ac2 ==============================
+[0m13:38:05.539453 [info ] [MainThread]: Running with dbt=1.7.8
+[0m13:38:05.540550 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/ben/jaffle_shop/logs', 'debug': 'False', 'profiles_dir': '/Users/ben/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:38:06.073450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131126d0>]}
+[0m13:38:06.199125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113d6b7d0>]}
+[0m13:38:06.200410 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m13:38:06.223029 [debug] [MainThread]: checksum: 67f0013ca5f0bd43af9a0873dd50792fde83ef69de63b71cacd0b4ac656c52e5, vars: {}, profile: , target: , version: 1.7.8
+[0m13:38:06.276424 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:38:06.277515 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/marts/core/int_orders__pivoted.sql
+[0m13:38:06.483560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fe3490>]}
+[0m13:38:06.500645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f26cd0>]}
+[0m13:38:06.501444 [info ] [MainThread]: Found 5 models, 3 seeds, 11 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m13:38:06.502041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11349c410>]}
+[0m13:38:06.505228 [info ] [MainThread]: 
+[0m13:38:06.506494 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:38:06.508311 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAW'
+[0m13:38:06.527312 [debug] [ThreadPool]: Using snowflake connection "list_RAW"
+[0m13:38:06.528015 [debug] [ThreadPool]: On list_RAW: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW"} */
+show terse schemas in database RAW
+    limit 10000
+[0m13:38:06.528541 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:38:07.201554 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m13:38:07.205233 [debug] [ThreadPool]: On list_RAW: Close
+[0m13:38:07.344123 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAW, now list_RAW_JAFFLE_SHOP)
+[0m13:38:07.360723 [debug] [ThreadPool]: Using snowflake connection "list_RAW_JAFFLE_SHOP"
+[0m13:38:07.369887 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_RAW_JAFFLE_SHOP"} */
+show terse objects in RAW.JAFFLE_SHOP limit 10000
+[0m13:38:07.371960 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:38:07.917017 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.0 seconds
+[0m13:38:07.922818 [debug] [ThreadPool]: On list_RAW_JAFFLE_SHOP: Close
+[0m13:38:08.070511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11426d710>]}
+[0m13:38:08.072907 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:38:08.074120 [info ] [MainThread]: 
+[0m13:38:08.078899 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m13:38:08.080026 [info ] [Thread-1 (]: 1 of 5 START sql view model JAFFLE_SHOP.stg_customers .......................... [RUN]
+[0m13:38:08.081666 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_RAW_JAFFLE_SHOP, now model.jaffle_shop.stg_customers)
+[0m13:38:08.082495 [debug] [Thread-2 (]: Began running node model.jaffle_shop.stg_orders
+[0m13:38:08.083293 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_payments
+[0m13:38:08.084053 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m13:38:08.085073 [info ] [Thread-2 (]: 2 of 5 START sql view model JAFFLE_SHOP.stg_orders ............................. [RUN]
+[0m13:38:08.086063 [info ] [Thread-3 (]: 3 of 5 START sql view model JAFFLE_SHOP.stg_payments ........................... [RUN]
+[0m13:38:08.098735 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m13:38:08.099862 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m13:38:08.101432 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m13:38:08.102562 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m13:38:08.103440 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m13:38:08.109540 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m13:38:08.116088 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (compile): 13:38:08.086601 => 13:38:08.115595
+[0m13:38:08.117774 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m13:38:08.119098 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m13:38:08.126175 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (compile): 13:38:08.104321 => 13:38:08.125685
+[0m13:38:08.157974 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.stg_orders
+[0m13:38:08.169932 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m13:38:08.170713 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (compile): 13:38:08.110358 => 13:38:08.170377
+[0m13:38:08.175016 [debug] [Thread-2 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m13:38:08.176017 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_payments
+[0m13:38:08.177243 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.stg_customers"
+[0m13:38:08.181909 [debug] [Thread-3 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m13:38:08.183024 [debug] [Thread-2 (]: Using snowflake connection "model.jaffle_shop.stg_orders"
+[0m13:38:08.183581 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_customers
+  
+   as (
+    -- noinspection SqlNoDataSourceInspectionForFile
+
+
+
+select
+    id as customer_id,
+    first_name,
+    last_name
+
+from raw.jaffle_shop.raw_customers
+  );
+[0m13:38:08.184437 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_orders
+  
+   as (
+    
+
+select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from raw.jaffle_shop.raw_orders
+  );
+[0m13:38:08.185171 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:38:08.186270 [debug] [Thread-3 (]: Using snowflake connection "model.jaffle_shop.stg_payments"
+[0m13:38:08.186781 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:38:08.189019 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+create or replace   view RAW.JAFFLE_SHOP.stg_payments
+  
+   as (
+    
+
+select
+    id,
+    order_id,
+    payment_method,
+    round(1.0 * amount / 100, 2) AS amount_usd
+
+from raw.jaffle_shop.raw_payments
+  );
+[0m13:38:08.191203 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:38:08.784286 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:38:08.823454 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.stg_customers (execute): 13:38:08.120098 => 13:38:08.823095
+[0m13:38:08.824163 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m13:38:08.869137 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:38:08.875879 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_payments (execute): 13:38:08.177722 => 13:38:08.875274
+[0m13:38:08.877109 [debug] [Thread-3 (]: On model.jaffle_shop.stg_payments: Close
+[0m13:38:08.952977 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11400ddd0>]}
+[0m13:38:08.954710 [info ] [Thread-1 (]: 1 of 5 OK created sql view model JAFFLE_SHOP.stg_customers ..................... [[32mSUCCESS 1[0m in 0.87s]
+[0m13:38:08.956329 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m13:38:08.958202 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:38:08.962670 [debug] [Thread-2 (]: Timing info for model.jaffle_shop.stg_orders (execute): 13:38:08.171038 => 13:38:08.962290
+[0m13:38:08.963359 [debug] [Thread-2 (]: On model.jaffle_shop.stg_orders: Close
+[0m13:38:09.021161 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143d9910>]}
+[0m13:38:09.022768 [info ] [Thread-3 (]: 3 of 5 OK created sql view model JAFFLE_SHOP.stg_payments ...................... [[32mSUCCESS 1[0m in 0.92s]
+[0m13:38:09.024043 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_payments
+[0m13:38:09.154986 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114038290>]}
+[0m13:38:09.156778 [info ] [Thread-2 (]: 2 of 5 OK created sql view model JAFFLE_SHOP.stg_orders ........................ [[32mSUCCESS 1[0m in 1.06s]
+[0m13:38:09.158501 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.stg_orders
+[0m13:38:09.160380 [debug] [Thread-4 (]: Began running node model.jaffle_shop.customers
+[0m13:38:09.161859 [debug] [Thread-1 (]: Began running node model.jaffle_shop.int_orders__pivoted
+[0m13:38:09.163062 [info ] [Thread-4 (]: 4 of 5 START sql view model JAFFLE_SHOP.customers .............................. [RUN]
+[0m13:38:09.164391 [info ] [Thread-1 (]: 5 of 5 START sql view model JAFFLE_SHOP.int_orders__pivoted .................... [RUN]
+[0m13:38:09.166064 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m13:38:09.167483 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers, now model.jaffle_shop.int_orders__pivoted)
+[0m13:38:09.168337 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.customers
+[0m13:38:09.169105 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.int_orders__pivoted
+[0m13:38:09.175554 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m13:38:09.181946 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:38:09.183217 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (compile): 13:38:09.169604 => 13:38:09.182852
+[0m13:38:09.183991 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (compile): 13:38:09.176187 => 13:38:09.183605
+[0m13:38:09.184544 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.customers
+[0m13:38:09.185123 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.int_orders__pivoted
+[0m13:38:09.192906 [debug] [Thread-4 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m13:38:09.197616 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.int_orders__pivoted"
+[0m13:38:09.200875 [debug] [Thread-4 (]: Using snowflake connection "model.jaffle_shop.customers"
+[0m13:38:09.201759 [debug] [Thread-4 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+create or replace   view RAW.JAFFLE_SHOP.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.JAFFLE_SHOP.stg_customers
+
+),
+
+orders as (
+
+    select * from RAW.JAFFLE_SHOP.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  );
+[0m13:38:09.205509 [debug] [Thread-1 (]: Using snowflake connection "model.jaffle_shop.int_orders__pivoted"
+[0m13:38:09.207194 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:38:09.208530 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: /* {"app": "dbt", "dbt_version": "1.7.8", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.int_orders__pivoted"} */
+create or replace   view RAW.JAFFLE_SHOP.int_orders__pivoted
+  
+   as (
+    
+
+
+
+WITH payments AS (
+    SELECT p.id AS id,
+           p.order_id AS order_id,
+           p.payment_method AS payment_method,
+           p.amount_usd AS amount,
+           o.status AS status
+    FROM RAW.JAFFLE_SHOP.stg_payments p
+    JOIN RAW.JAFFLE_SHOP.stg_orders o
+    ON p.order_id = o.order_id
+),
+pivoted AS (
+    SELECT
+        order_id,
+        SUM(CASE WHEN payment_method = 'bank_transfer' THEN amount ELSE 0 END) AS bank_transfer_amount,
+        SUM(CASE WHEN payment_method = 'coupon' THEN amount ELSE 0 END) AS coupon_amount,
+        SUM(CASE WHEN payment_method = 'credit_card' THEN amount ELSE 0 END) AS credit_card_amount,
+        SUM(CASE WHEN payment_method = 'gift_card' THEN amount ELSE 0 END) AS gift_card_amount
+    FROM payments
+    WHERE status = 'completed'
+    GROUP BY 1
+)
+
+SELECT * FROM pivoted
+  );
+[0m13:38:09.211660 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:38:09.886217 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:38:09.894514 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.int_orders__pivoted (execute): 13:38:09.193709 => 13:38:09.893964
+[0m13:38:09.903469 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m13:38:09.910117 [debug] [Thread-1 (]: On model.jaffle_shop.int_orders__pivoted: Close
+[0m13:38:09.917797 [debug] [Thread-4 (]: Timing info for model.jaffle_shop.customers (execute): 13:38:09.185543 => 13:38:09.917030
+[0m13:38:09.921935 [debug] [Thread-4 (]: On model.jaffle_shop.customers: Close
+[0m13:38:10.057807 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fa8650>]}
+[0m13:38:10.060540 [info ] [Thread-4 (]: 4 of 5 OK created sql view model JAFFLE_SHOP.customers ......................... [[32mSUCCESS 1[0m in 0.89s]
+[0m13:38:10.063195 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.customers
+[0m13:38:10.070777 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '72a3bd10-02c4-412b-89ec-0dfe18223ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1142ec850>]}
+[0m13:38:10.072220 [info ] [Thread-1 (]: 5 of 5 OK created sql view model JAFFLE_SHOP.int_orders__pivoted ............... [[32mSUCCESS 1[0m in 0.90s]
+[0m13:38:10.073385 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.int_orders__pivoted
+[0m13:38:10.077023 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:38:10.077895 [debug] [MainThread]: Connection 'model.jaffle_shop.int_orders__pivoted' was properly closed.
+[0m13:38:10.078524 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_orders' was properly closed.
+[0m13:38:10.079033 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m13:38:10.079663 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m13:38:10.080619 [info ] [MainThread]: 
+[0m13:38:10.081427 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 3.57 seconds (3.57s).
+[0m13:38:10.083422 [debug] [MainThread]: Command end result
+[0m13:38:10.097942 [info ] [MainThread]: 
+[0m13:38:10.098941 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:38:10.099609 [info ] [MainThread]: 
+[0m13:38:10.100300 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m13:38:10.102162 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.648193, "process_user_time": 4.47435, "process_kernel_time": 0.432336, "process_mem_max_rss": "141418496", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:38:10.103037 [debug] [MainThread]: Command `dbt run` succeeded at 13:38:10.102830 after 4.65 seconds
+[0m13:38:10.103651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11349e890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134d74d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f197c90>]}
+[0m13:38:10.104291 [debug] [MainThread]: Flushing usage events
