@@ -10,7 +10,7 @@ WITH payments AS (
     SELECT p.id AS id,
            p.order_id AS order_id,
            p.payment_method AS payment_method,
-           p.amount AS amount,
+           p.amount_usd AS amount,
            o.status AS status
     FROM RAW.JAFFLE_SHOP.stg_payments p
     JOIN RAW.JAFFLE_SHOP.stg_orders o
