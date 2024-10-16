@@ -31,7 +31,13 @@ clean-targets: # directories to be removed by `dbt clean`
 models:
   jaffle_shop:
     +materialized: table
-    # Config indicated by + and applies to all files under models/example/
+# Config indicated by + and applies to all files under models/example/
 
-    staging:
-      +materialized: view
+  staging:
+    +materialized: view
+
+seeds:
+  +database: raw
+  jaffle_shop:
+    raw_payments:
+      +schema: stripe
